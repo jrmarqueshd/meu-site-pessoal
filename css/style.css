@@ -1,0 +1,264 @@
+/* 
+    Author: Gilmar Marques
+    Date: 11/22/2018 7:11pm
+
+    license: none.
+
+ */
+ @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Source+Sans+Pro');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* head */
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #d9d9c139;
+    border-bottom: 10px solid orange;
+    /* font-family: 'Black Han Sans', sans-serif; */
+    position: relative;
+}
+
+header a{
+    text-decoration: none;
+    color: #000
+}
+
+.img-logo{
+    width: 60px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    opacity: 0.7;
+    text-shadow: 2px 2px orange;
+    transition-duration: 987ms;
+}
+
+.logo{
+    font-size: 300%;
+    margin-left: 10px;
+    position: absolute;
+    left: 105px;
+    top: 10px;
+    color: #000;
+    opacity: 0.7;
+    transition-duration: 987ms;
+}
+
+/* nav */
+.div-principal{
+    position: relative;
+    display: block;
+}
+
+.menu-nav{
+    padding-top: 30px;
+    display: inline-block;
+    width: 100px;
+    height: 95vh;
+    position: sticky;
+    top: 0%;
+    background-color: #090909;
+    box-sizing: border-box;
+}
+
+.menu-nav a, span{
+    color: white;
+    opacity: 0.5;
+}
+
+.menu-nav ul{
+    text-align: center;
+}
+
+.menu-nav li{
+    margin: 10px 0 40px 0;
+}
+
+.navbar span{
+    display: block;
+}
+
+.icon-navegacao{
+    width: 40px;
+    transition-duration: 987ms;
+}
+
+.voltar{
+    padding-top: 5px;
+    background: #fff;
+}
+
+.img-voltar{
+    width: 60px;
+    height: 60px;
+}
+
+/* section */
+
+.conteudo-principal{
+    position: sticky;
+    background-color: #fff;
+    height: 110vh;
+    bottom: 10px;
+    left: 100px;
+    width: 60%;
+    overflow: scroll;
+}
+
+.conteudo-principal::-webkit-scrollbar { 
+    width:10px; background:#e3e0d601; 
+}
+
+.conteudo-principal::-webkit-scrollbar-track { 
+    background: rgba(0,0,0,0.05); 
+}
+
+.conteudo-principal::-webkit-scrollbar-thumb { 
+    border-radius:10px; 
+    background:#8b877801;  
+}
+
+.conteudo-principal::-webkit-scrollbar-y, 
+.conteudo-principal::-webkit-scrollbar-track-y,
+.conteudo-principal::-webkit-scrollbar-thumb{
+    transition-duration: 400ms;
+}
+
+.titulo-articles{
+    background-color: #272626;
+    color: white;
+    height: 90px;
+    margin-bottom: 10px;
+    padding: 50px 0 0 20px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+article{
+    color: #000;
+    font-size: 18px;
+    margin: 20px 40px;
+    text-align: justify;
+}
+
+.bem-vindo{
+    height: 400px;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 40px;
+}
+
+.img-article{
+    height: 200px;
+}
+
+.img-mapa{
+    height: 400px;
+}
+
+/* aside */
+
+.menu-aside{
+    display: inline-block;
+    width: 32.6%;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background-color: #090909;
+}
+
+.item-aside{
+    border-right: 5px solid orange;
+    border-bottom: 5px solid orange;
+    height: 300px;
+    background-color: #181717;
+    margin-top: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+    text-align: justify;
+    overflow-y: scroll;
+}
+
+.item-aside img{
+    height: 150px;
+    float: left;
+    margin: 0 10px 0 0; 
+}
+
+.titulo-item-aside{
+    background-color: #272626;
+    color: white;
+    height: 30px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+/****************************************** HOVER ************************************************/
+
+/* header:hover */
+
+.img-logo:hover{
+    width: 60px;
+    left: 55px;
+    top: 10px;
+    opacity: 1;
+}
+
+.logo:hover{
+    font-size: 65px;
+    left: 105px;
+    top: 5px;
+    color: #000;
+    opacity: 1;
+    text-shadow: 4px 4px orange;
+}
+
+/* nav:hover */
+
+.menu-nav a:hover, span:hover{
+    opacity: 1;
+}
+
+.icon-navegacao:hover{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar li:hover{
+    border-right: 5px solid orange;
+}
+
+.navbar span:hover{
+    color: orange;
+}
+
+/* article:hover */
+
+.conteudo-principal::-webkit-scrollbar:hover { 
+    width:10px; background:#e3e0d6; 
+}
+
+.conteudo-principal::-webkit-scrollbar-track:hover { 
+    background: rgba(0,0,0,0.2); 
+}
+
+.conteudo-principal::-webkit-scrollbar-thumb:hover { 
+    border-radius:10px; 
+    background: rgb(255, 153, 0, 0.5);  
+}
+
